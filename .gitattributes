@@ -1,0 +1,20 @@
+# Lineendings
+*.sln        eol=crlf
+*.csproj     eol=crlf
+*.config     eol=crlf
+
+*.cs         eol=crlf
+*.lua        eol=crlf
+*.xml        eol=crlf
+
+# Whitespace rules
+# strict (no trailing, no tabs)
+*.cs         whitespace=trailing-space,space-before-tab,tab-in-indent,cr-at-eol
+*.lua        whitespace=trailing-space,space-before-tab,tab-in-indent,cr-at-eol
+*.xml        whitespace=trailing-space,space-before-tab,tab-in-indent,cr-at-eol
+
+# normal (no trailing)
+*.txt        whitespace=trailing-space,space-before-tab,cr-at-eol
+
+# special files which must ignore whitespace
+*.patch      whitespace=-trailing-space
